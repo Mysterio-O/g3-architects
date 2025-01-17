@@ -1,0 +1,60 @@
+/* work sans font styles */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.work-sans-simple {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/* shared styles */
+
+.display-flex {
+    display: flex;
+}
+.dark-1 {
+    color: #131313;
+}
+.dark-2 {
+    color: #424242;
+}
+.bg-secondary {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+/* navbar styles goes on from here */
+.nav-links {
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+    padding: 0;
+}
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.brand {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.list-items {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+/* nav reponsive styles */
+
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links {
+        flex-direction: column;
+    }
+    .brand {
+        text-align: center;
+    }
+}
