@@ -253,3 +253,21 @@ main > section {
         gap: 10px;
     }
 }
+
+/* footer starts from here */
+.footer {
+    max-width: 1440px;
+    height: 100px;
+    margin: 130px auto;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-text {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
