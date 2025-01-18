@@ -160,3 +160,66 @@ main > section {
         margin: 20px auto;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* fact styles are here */
+.fact-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.fact-subtitle {
+    max-width: 530px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 17.5rem; */
+}
+
+.fact-box {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    height: 240px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 5px;
+    margin-bottom: 10px;
+} 
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 10px;
+}
+
+/* responsive styles for fact section */
+
+@media screen and (max-width: 576px) {
+    .fact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        width: 100%;
+    }
+    .fact-title, .fact-subtitle {
+        text-align: center;
+    }
+}
